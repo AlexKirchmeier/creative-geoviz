@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Geoviz</title>
+    <link rel="stylesheet" href="PackedChart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.8/d3.min.js" charset="utf-8" type="text/JavaScript"></script>
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js" charset="utf-8" type="text/JavaScript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.19.0/d3-legend.js" charset="utf-8" type="text/JavaScript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js" charset="utf-8" type="text/JavaScript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js" charset="utf-8" type="text/JavaScript"></script>
+    <!-- In case I use Chroma -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <fieldset>
+      <legend>Graph Options</legend>
+      <h3 class=first-h3>Number of Bubbles to Show</h3>
+      <div><select id=limit></select></div>
+      <h3>Order</h3>  
+        <select id=shuffle>
+          <option value="0">Random</option>
+          <option value="1">Largest to smallest</option>
+        </select>
+  </fieldset>
+    
+  <div id="chart" class="chart"></div>
+    <script src="PackedChart.js"></script>
+</body>
+</html>
+
+<!-- Source code: https://codepen.io/kendsnyder/pen/vPmQbY -->
